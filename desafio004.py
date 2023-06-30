@@ -1,0 +1,11 @@
+algo = (input('Fale algo: '))
+tipo = type(algo)
+
+print(f'{algo} é uma {tipo}.')
+print('Só tem espaços? ', algo.isspace())
+print('Sé tem númericos? ', algo.isnumeric())
+print('É alfabetico? ', algo.isalpha())
+print('É alfanumerico? ', algo.isalnum())
+print('Está em letras MAIÚSCULAS? ',algo.isupper())
+print('Está em letras MINUSCULAS?',algo.islower())
+print('Está capitalizada? ',algo.istitle())
