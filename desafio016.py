@@ -5,5 +5,5 @@ ex: 6.127 = 6
 """
 import math
 numero =  float(input('Diga um numero: '))
-numero_inteiro = math.floor(numero)
+numero_inteiro = math.trunc(numero)
 print(f'O numero {numero} tem a parte inteira {numero_inteiro}.')
