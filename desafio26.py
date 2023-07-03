@@ -20,6 +20,3 @@ print(f"A primeira ocorrência da letra 'A' está na posição {frase_primeiro_a
 # Posição da última ocorrência da letra "A"
 frase_ultimo_a = frase.upper().rfind('A')
 print(f"A última ocorrência da letra 'A' está na posição {frase_ultimo_a}.")
-
-qtsletrasa = frase.upper().count('A')
-print(f'A letra "A" apareceu {qtsletrasa} na frase.')
