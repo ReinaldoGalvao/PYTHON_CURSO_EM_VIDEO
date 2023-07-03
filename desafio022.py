@@ -24,6 +24,3 @@ primeironome = listanomes[0] #4
 numero_caracteresprimeiro = len(primeironome) #4
 print(f'O primeiro nome tem {numero_caracteresprimeiro} caracteres.') #4
 print('='*20)
-print('='*20)
-print('='*20)
-print('='*20)
