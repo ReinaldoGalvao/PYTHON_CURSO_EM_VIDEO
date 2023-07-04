@@ -13,6 +13,7 @@ frase = str(input('Digite um texto: ')).upper().strip()
 # Quantidade de vezes que a letra "A" aparece
 frase_a = frase.upper().count('A')
 print(f"A letra 'A' aparece {frase_a} vezes na frase.")
+print(f"A letra 'A' aparece {frase.upper().count('A')} vezes na frase.")
 print("A letra 'A' aparece {} vezes na frase.".format(frase.count('A')))
 
 # Posição da primeira ocorrência da letra "A"

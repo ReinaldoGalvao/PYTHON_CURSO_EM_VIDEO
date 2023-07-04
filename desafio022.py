@@ -19,7 +19,7 @@ print(f'Seu nome tem {len(nome)} letras contando os espaços.')
 #print(len(nome) - nome.count(' '))#3
 print('='*20)
 nome_sem_espaco = (nome.replace(' ', '')) 
-print(f'Seu nome tem {len(nome_sem_espaco)} letras retirando os espaços')
+print(f'Seu nome tem {len(nome_sem_espaco)} letras sem contar os espaços.')
 #print('='*20)
 #print(len(nome.replace(' ', ''))) #3
 print('='*20)
