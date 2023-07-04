@@ -5,22 +5,29 @@ Crei um programa que leia o nome completo de uma pessoa e mostre:
 03 Quantas letras ao todo (sem considerar os espaços)
 04 Quantas letras tem o primeiro nome
 """
-nome = input('Diga seu nome completo: ')
+nome = str(input('Diga seu nome completo: ').strip())
 
 print('='*20)
 print(nome)
 print('='*20)
-print(nome.upper()) #1
+print(f'Seu nome em maiuscolo é {nome.upper()}') #1
 print('='*20)
-print(nome.lower()) #2
+print(f'Seu nome em minusculo é {nome.lower()}') #2
 print('='*20)
-print(len(nome))
+print(f'Seu nome tem {len(nome)} letras contando os espaços.')
+#print('='*20)
+#print(len(nome) - nome.count(' '))#3
 print('='*20)
-print(len(nome.replace(' ', ''))) #3
+nome_sem_espaco = (nome.replace(' ', '')) 
+print(f'Seu nome tem {len(nome_sem_espaco)} letras retirando os espaços')
+#print('='*20)
+#print(len(nome.replace(' ', ''))) #3
 print('='*20)
 listanomes = nome.split() #4
-print(listanomes)
+#print(listanomes)
 primeironome = listanomes[0] #4
 numero_caracteresprimeiro = len(primeironome) #4
-print(f'O primeiro nome tem {numero_caracteresprimeiro} caracteres.') #4
+print(f'Seu primeiro nome tem {numero_caracteresprimeiro} letras.') #4
+print('='*20)
+print(f'Seu primeiro nome tem {nome.find(" ")} letras.')
 print('='*20)
