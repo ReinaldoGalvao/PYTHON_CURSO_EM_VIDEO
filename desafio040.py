@@ -9,10 +9,10 @@ for i in range(2):
 media = (notas[0] + notas[1]) /2
 
 if media < 5.0:
-    print(f'Sua media foi {media} e você está REPROVADO.')
+    print(f'Sua media foi {media:.2f} e você está REPROVADO.')
     
 elif media > 5.0 and media < 6.9 :
-    print(f'Sua media foi {media} e você está RECUPERAÇÃO.')
+    print(f'Sua media foi {media:.2f} e você está RECUPERAÇÃO.')
     
 elif media >= 7.0:
-    print(f'Sua media foi {media} e você está APROVADO.') 
+    print(f'Sua media foi {media:.2f} e você está APROVADO.') 
