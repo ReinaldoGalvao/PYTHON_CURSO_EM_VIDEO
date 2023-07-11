@@ -1,29 +1,30 @@
 '''
-Crie um programa que  leia o comprimento de 3 retas
-e diga se ao usuario se elas poder ou nao formar um triangulo
+Desenvolva uma logica que leia o peso e altura de uma pessoa, calcule seu IMC e mostre seu status, de acordo com a tabela abaixo:
+Abaixo de 18.5: Abaixo do peso
+Entre 18.5 e 25: Peso ideal
+Entre 25.1 até 30: Sobre peso
+Entre 30.1 até 40: Obesidade
+Acima de 40: Obesidade móbida
 '''
-from rich import print
 
-cores = {
-    'limpa':'\033[m',
-    'azul':'\033[34m',
-    'amarelo':'\033[33m',
-    'pretoebranco':'\033[7:30m'
-    }
+peso = float(input('Diga seu peso: '))
+altura = float(input('Diga sua altura: '))
 
-r1 = int(input('Diaga o comprimento da primeira reta: '))
-r2 = int(input('Diaga o comprimento da segunda reta: '))
-r3 = int(input('Diaga o comprimento da terceira reta: '))
+imc = peso / (altura**2)
 
-if (r2 - r3) < r1 < r2 + r3 or (r1 - r3) < r2 < r1 + r3 or (r1 - r2) < r3 < r1 + r2:
-    print('Pode formar um triangulo')
-    if r1 == r2 and r1 == r3 and r2 == r3:
-        print('é um Equliátero')
-        
-    elif r1 == r2 or r2 == r3 or r3 == r1:
-        print('é um Isósceles')
-        
-    else:
-        print('é um Escaleno')
-else:
-    print('\033[0;34;4Nao pode')
+print(f'{imc:.2f}')
+
+if imc < 18.5:
+    print(f'O seu IMC é de {imc:.2f} e você está abaixo do peso.')
+
+if imc > 18.5 and imc <= 25:
+    print(f'O seu IMC é de {imc:.2f} e você está no imc ideal.')
+
+if imc >= 25.1 and imc <= 30:
+    print(f'O seu IMC é de {imc:.2f} e você está com sobre imc.')
+    
+if imc >= 30.1 and imc <= 40:
+    print(f'O seu IMC é de {imc:.2f} e você está com Obesidade.')
+    
+if imc >= 40.1:
+    print(f'O seu IMC é de {imc:.2f} e você está com Obesidade mórbida.')
