@@ -44,7 +44,6 @@ def jogar_jogo():
             print('O computador ganhou! Você perde a aposta.')
             jogador_point += aposta * (pagamento - 1)
             computador_point -= aposta
-
         print(f'Jogador: {jogador_point} x Computador: {computador_point}\n')
 
 jogar_jogo()
