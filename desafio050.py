@@ -1,6 +1,6 @@
 '''
 Faça um programa que leia seis numeros inteiros e mostre a soma apenas daquelas que forem pares.
-Se o valor digitado for impar, desconsidere-o
+Se o valor digitado for impar, desconsidere-o.
 '''
 
 soma = 0
