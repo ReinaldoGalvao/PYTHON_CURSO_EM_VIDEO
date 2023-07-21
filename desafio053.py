@@ -8,8 +8,8 @@ data_atu = datetime.now()
 print(data_atu)
 data_ano = data_atu.year
 
-# Definir a idade mínima para ser considerado maior de idade (pode ser ajustada conforme a legislação local)
-IDADE_MINIMA_MAIOR_IDADE = 18
+# Definir a idade mínima para ser considerado maior de idade
+IDADE_MINIMA_MAIOR_IDADE = 21
 
 # Inicializar contadores
 menores_de_idade = 0
