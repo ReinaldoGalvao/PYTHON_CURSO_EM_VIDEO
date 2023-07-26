@@ -1,33 +1,34 @@
 '''
-Crei um programa que leia o ano de nascimento de 7 pessoas
-No final mostre quantas pessoas ainda não atingiram a maior idade 
-e quantas já são maiores.
+Creie um programa que leia uma frase qualquer e diga se ela é
+um palindroma, desconsiderando os espaços.
 '''
-from datetime import datetime
-data_atu = datetime.now()
-print(data_atu)
-data_ano = data_atu.year
 
-# Definir a idade mínima para ser considerado maior de idade
-IDADE_MINIMA_MAIOR_IDADE = 21
+frase = str(input('Digite uma frase: ')).strip().upper()
+print(frase)
+palavras = frase.split()
+junto = ''.join(palavras)
+inverso = junto[::-1]
 
-# Inicializar contadores
-menores_de_idade = 0
-maiores_de_idade = 0
+"""inverso = ''
+for letra in range(len(junto) - 1, -1, -1):
+    inverso += junto[letra]"""
 
-# Loop para ler o ano de nascimento das 7 pessoas
-for i in range(1, 8):
-    ano_nascimento = int(input(f"Digite o ano de nascimento da {i}ª pessoa: "))
-    
-    # Calcular a idade da pessoa
-    idade = (data_ano - ano_nascimento)
-    
-    # Verificar se a pessoa é menor ou maior de idade
-    if idade < IDADE_MINIMA_MAIOR_IDADE:
-        menores_de_idade += 1
-    else:
-        maiores_de_idade += 1
+if junto == inverso:
+    print('É palindroma')
+else:
+    print('Não é palindroma')
+print(junto, inverso)
 
-# Mostrar o resultado
-print(f"Pessoas menores de idade: {menores_de_idade}")
-print(f"Pessoas maiores de idade: {maiores_de_idade}")
+
+
+"""
+def is_palindroma(frase):
+    frase_junta = frase.replace(' ', '')
+    frase_revertida = frase_junta[::-1]
+    return frase_junta == frase_revertida
+
+a = 'apos a sopa'
+b =  'o lobo ama o bolo'
+
+print(is_palindroma(a))
+print(is_palindroma(b))"""
