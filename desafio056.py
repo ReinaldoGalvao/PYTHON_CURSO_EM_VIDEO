@@ -17,6 +17,7 @@ nome_Mvelho = ''
 nome_Mvelhoh = ''
 idadeveriveio = 0
 idadeveriveioh = 0
+tot_mulher20 = 0
 def contem_apenas_letras(texto):
     return texto.isalpha()
 
@@ -24,7 +25,8 @@ def contem_apenas_numeros(texto):
     return texto.isnumeric()
 
 for i in range(1, 5):
-    nome = input('Diga o nome da {0}° pessoa: '.format(i))
+    nome = input('Diga o nome da {0}° pessoa: '.format(i)).strip().capitalize()
+    print(nome)
     while not contem_apenas_letras(nome):
         print('Nome inválido. Digite apenas letras, sem números ou caracteres especiais.')
         nome = input('Diga o nome da {0}° pessoa: '.format(i))
@@ -42,6 +44,11 @@ for i in range(1, 5):
         sexo = input('Diga o sexo da {0}° pessoa: '.format(i)).strip().upper()
     
     soma_idade += idade
+    if i == 1 and sexo in 'M':
+        idadeveriveioh = idade
+        nome_Mvelhoh = nome
+        
+    
     if sexo == 'F':
         total_feminino += 1
         if idadeveriveio < idade:
@@ -52,11 +59,15 @@ for i in range(1, 5):
         if idadeveriveioh < idade:
             idadeveriveioh = idade
             nome_Mvelhoh = nome
+            
+    if sexo == 'F' and idade < 20:
+        tot_mulher20 += 1
 
 media_idade = soma_idade / 4
 
 print(f'Total de pessoas do sexo masculino: {total_masculino}')
 print(f'Total de pessoas do sexo feminino: {total_feminino}')
-print(f'Média de idades: {media_idade:.2f}')
+print(f'Média de idades: {media_idade:.0f}')
 print(f'A mulher mais velha do grupo : {nome_Mvelho} com a idade de {idadeveriveio} anos.')
-print(f'A mulher mais velha do grupo : {nome_Mvelhoh} com a idade de {idadeveriveioh} anos.')
+print(f'O homem mais velho do grupo : {nome_Mvelhoh} com a idade de {idadeveriveioh} anos.')
+print(f'Ao todo temos {tot_mulher20} mulheres com menos de 20 anos')
