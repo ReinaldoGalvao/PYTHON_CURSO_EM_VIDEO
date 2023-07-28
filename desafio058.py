@@ -5,15 +5,15 @@ mostrando no final quantos palpites foram necessarios para vencer.
 '''
 
 import random
-numeropc = random.randint(0, 10)
+numeropc = random.randint(0, 100)
 
-numerousuario = 11
+numerousuario = 110
 numero_erro = 1
 '''while numerousuario < 0 or numerousuario > 100:
     numerousuario = int(input('O numero tem que ser entre 0 e 100: '))'''
 
 while numerousuario != numeropc:
-    numerousuario = int(input('Escolha um numero entre 0 e 10: '))
+    numerousuario = int(input('Escolha um numero entre 0 e 100: '))
     if numeropc > numerousuario:
         print('Chutou baixo.')
         numero_erro += 1
