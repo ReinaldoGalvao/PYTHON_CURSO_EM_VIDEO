@@ -58,7 +58,7 @@ while True:
         [\033[1;31m2\033[m] multiplicar
         [\033[1;31m3\033[m] maior
         [\033[1;31m4\033[m] novos números
-        [\033[1;31m5\033[m] sair do programa\n        Escolha um das opções acima: '''.replace(' ', ''))
+        [\033[1;31m5\033[m] sair do programa\n        Escolha um das opções acima: ''')
         sleep(0.5)
         if resposta == '1':
             print('CALCULANDO...')
