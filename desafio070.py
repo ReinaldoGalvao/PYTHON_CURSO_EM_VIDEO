@@ -18,11 +18,12 @@ while True:
     item = input(f'Qual o nome do item: ').strip().capitalize()
     while not item.isalpha():
         item = input(f'Qual o nome do item: ').strip().capitalize()
-    
+        
     preco = input(f'Qual o valor do item: ').strip()
     while not preco.isdigit():
         preco = input(f'Qual o valor do item: ').strip()
     preco = int(preco)
+    
     if primeira_vez:
         preco_barato = preco
         primeira_vez = False
@@ -30,7 +31,8 @@ while True:
     total = total + preco
     if preco > 1000:
         preco1000 += 1
-    if preco < preco_barato:
+    if preco_barato > preco:
+        preco_barato = preco
         nome_barato = item
     pergunta = input('Quer parar? [S/N]').strip().upper()
     if pergunta == 'S':
