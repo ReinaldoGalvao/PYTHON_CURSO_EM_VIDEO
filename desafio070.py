@@ -16,7 +16,13 @@ primeira_vez = True
 
 while True:
     item = input(f'Qual o nome do item: ').strip().capitalize()
-    preco = int(input(f'Qual o valor do item: ').strip())
+    while not item.isalpha():
+        item = input(f'Qual o nome do item: ').strip().capitalize()
+    
+    preco = input(f'Qual o valor do item: ').strip()
+    while not preco.isdigit():
+        preco = input(f'Qual o valor do item: ').strip()
+    preco = int(preco)
     if primeira_vez:
         preco_barato = preco
         primeira_vez = False
