@@ -28,7 +28,7 @@ while True:
         print(f'Vitória')
         print(f'Voce escolheu {numero} e o pc {numeropc} e a soma deles é {soma}')
     else:
-        print('Pedeu')
+        print('GAME OVER')
         break
 print(f'Voce escolheu {numero} e o pc {numeropc} e a soma deles é {soma}')
 print(f'Nessa rodada você teve {win} vitórias.')
