@@ -16,7 +16,7 @@ while True:
     while parouimpar != 'P' and parouimpar != 'I':
         parouimpar = input(f'Par ou Ímpar? [P/I]').strip().upper()
         continue
-    numeropc =  randint(0, 100)
+    numeropc =  randint(0, 101)
     soma = numero + numeropc
     if soma %2 == 0 and parouimpar == 'P':
         win += 1
