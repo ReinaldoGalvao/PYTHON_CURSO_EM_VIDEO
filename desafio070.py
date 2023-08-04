@@ -37,6 +37,6 @@ while True:
     pergunta = input('Quer parar? [S/N]').strip().upper()
     if pergunta == 'S':
         break
-print(f'O total da compra é de {total}')
+print(f'O total da compra é de {total:.2f}')
 print(f'Foram {preco1000} items custando acima de R$1.000')
-print(f'O item mais barato é {nome_barato} que custou {preco_barato}')
+print(f'O item mais barato é {nome_barato} que custou R${preco_barato:.2f}')
