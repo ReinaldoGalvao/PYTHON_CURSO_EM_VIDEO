@@ -1,13 +1,6 @@
 
 dinheiro = int(input('Diga quantos quer sacar: '))
 
-
-
-notas100 = dinheiro // 100
-
-print(f'{notas100} notas de R$100,00')
-
-"""
 notas50 = dinheiro // 50
 resto50 = dinheiro % 50
 
@@ -23,4 +16,4 @@ print(f'{notas50} notas de R$50,00')
 print(f'{notas20} notas de R$20,00')
 print(f'{notas10} notas de R$10,00')
 print(f'{notas1} notas de R$1,00')
-"""
+
