@@ -13,7 +13,10 @@ num =  (int(input('Digite um numero: ')),
         int(input('Digite o ultimo numero: ')))
 print(f'Voce digotou os numeros {num}')
 print(f'O valor 9 apareceu {num.count(9)} vezes')
-print(f'o primeiro numero 3 apareceu na {num.index(3)+1}ª posição')
+if 3 in num:
+    print(f'o primeiro numero 3 apareceu na {num.index(3)+1}ª posição')
+else:
+    print(f'O valor 3 nao foi digitado em nunhuma posição.')
 print(f'O valores pares digitados foram ', end=' ')
 for n in num:
     if n % 2 == 0:
