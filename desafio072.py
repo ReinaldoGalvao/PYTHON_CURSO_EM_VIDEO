@@ -36,7 +36,3 @@ while True:
     if opcao != 'S':
         break
 
-
-
-
-
