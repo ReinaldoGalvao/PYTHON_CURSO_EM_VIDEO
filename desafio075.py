@@ -25,4 +25,4 @@ for n in num:
     else:
         impar.append(n)
 print(f'O numeros pares digitados foram {" ".join(map(str, par))}')
-print(f'Todos os numeros digitados foram {" ".join(map(str, num))}')
+print(f'Os numeros impares digitados foram {" ".join(map(str, impar))}')
