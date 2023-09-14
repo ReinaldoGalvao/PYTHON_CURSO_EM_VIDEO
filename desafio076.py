@@ -12,9 +12,9 @@ lista =('Lapis', 1,
         'Mochila', 120.32,
         'Caneta', 22.30,
         'Livros', 34.90)
-print('-' * 30)
-print('Listagem DE PREÇOS')
-print('-' * 30)
+print('-' * 40)
+print(f"{'Listagem DE PREÇOS':^40}")
+print('-' * 40)
 for pos in range(0, len(lista)):
     if pos % 2 == 0:
         print(f'{lista[pos]:.<30}', end=' ')
