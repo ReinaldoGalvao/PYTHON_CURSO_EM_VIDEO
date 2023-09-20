@@ -18,22 +18,24 @@ for v in range (1, 8):
 print('-='*30) #para imprimir 2 lista 
 print(f'Todos os valores: ', end='')
 
-primeiro_elemento = True
+primeiro_elemento = True #aqui
 
-for lista_dentro in numeros:
-    for item in lista_dentro:
-        if primeiro_elemento:
-            print(item, end='')
-            primeiro_elemento = False
+for lista_dentro in numeros: #imprime 
+    for item in lista_dentro: #sem
+        if primeiro_elemento: #a virgula
+            print(item, end='') #no 
+            primeiro_elemento = False #final
         else:
-            print(f', {item}', end='')
+            print(f', {item}', end='') ##
 print()
 print('-='*30)
 print(f'Foram adicionados {par} números pares.')
 print('-='*30)
+numeros[0].sort()
 print(f'Os valores pares foram ', ', '.join(map(str, numeros[0]))) #imprime os dados de uma lista fora da lista
 print('-='*30)
 print(f'Foram adicionados {impar} números impares.')
 print('-='*30)
+numeros[1].sort()
 print(f'Os valores impares foram ', ', '.join(map(str, numeros[1]))) #imprime os dados de uma lista fora da lista
 print('-='*30)
