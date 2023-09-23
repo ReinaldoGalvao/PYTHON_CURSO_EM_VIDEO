@@ -9,6 +9,11 @@ Calcule e acrescente, além da idade, com quantos anos a pessoa vai se aposentar
 import datetime
 ano_atual = datetime.date.today().year
 
+def calcular_anos_para_aposentar(dados):
+    if dados['Anos_aposentar'] > ano_atual:
+        print(f'O {dados["Nome"]} irá se aposentar em {dados["Anos_aposentar"]} e faltam {dados["Anos_aposentar"] - ano_atual} anos')
+    else:
+        print(f'O {dados["Nome"]} já se aposentou em {dados["Anos_aposentar"]}')
 #print(ano_atual)
 dados = {}
 
@@ -21,8 +26,6 @@ if dados['CTPS'] != '':
     dados['Salario'] = float(input('Salario: '))
 dados['Anos_aposentar'] = dados['Ano_contrat'] + 35
 print(f'O {dados["Nome"]} tem {dados["Idade"]} anos')
-if dados['Anos_aposentar'] > ano_atual:
-    print(f'O {dados["Nome"]} irá se aposentar em {dados["Anos_aposentar"]} e faltam {dados["Anos_aposentar"] - ano_atual} anos')
-else:
-    print(f'O {dados["Nome"]} já se aposentou em {dados["Anos_aposentar"]}')
+calcular_anos_para_aposentar(dados) #chamei a função
+
 #print(dados)
