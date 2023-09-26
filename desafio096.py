@@ -4,8 +4,7 @@ dimensões da um terrono retangular (largura e comprimento) e mostre a area do t
 '''
 def area (l, c):
     a = l * c
-    print(f'A area de um terreno {l}x{c} é de {a}')
-
+    print(f'A area de um terreno {l:.2f} x {c:.2f} é de {a}m°')
 
 print('Controle de Terrenos')
 print('-' *20)
