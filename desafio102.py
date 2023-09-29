@@ -29,3 +29,4 @@ def fatorial(n, show=False):
 
 num = int(input('Diga um numero: '))
 print(fatorial(num, show=True))
+
