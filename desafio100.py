@@ -27,7 +27,7 @@ print(f'Números sorteados: {numeros}')
 soma_pares = somaPar(numeros)
 print(f'Soma dos números pares: {soma_pares}')
 
-
+#vou refazer
 """
 def sorteia(lista):
     print('Sorteando 5 valores da lista: ', end='')
