@@ -23,4 +23,4 @@ def porcentagemmenos(x=0, y=0):
     return porcentagem
 
 def moeda(x=0, moeda='R$'):
-    return f'{moeda}{x}'.replace('.', ',')
+    return f'{moeda}{x:.2f}'.replace('.', ',')
