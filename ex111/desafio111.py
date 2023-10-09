@@ -3,7 +3,7 @@ Crie um pacote chamado utilidadesCeV que tenha dois modulos internos chamados mo
 Transfira todas as funções utilizados nos desafios 107, 108 e 109 para o primeiro pacote e mantenha tudo funcionando.
 '''
 
-from ex111.utilidadescev import moeda
+from utilidadescev import moeda
 
 p = float(input('Diga um valor R$: '))
 moeda.resumo(p, 20, 12)
