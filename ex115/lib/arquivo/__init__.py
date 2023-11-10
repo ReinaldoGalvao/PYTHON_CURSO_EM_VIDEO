@@ -47,3 +47,16 @@ def cadastrar(arq, nome='desconhecido', idade=0):
         else:
             print(f'Novo registro de {nome} adcionado.')
             a.close()
+
+
+def deletar_cadastro(arq, nome):
+    try:
+        with open(arq, 'r') as file:
+            linhas = file.readlines()
+        with open(arq, 'w') as file:
+            for linha in linhas:
+                if not linha.startswith(nome + ';'):
+                    file.write(linha)
+        print(f'Registro de {nome} deletado, se existir.')
+    except Exception as e:
+        print(f'Houve um erro ao deletar o registro de {nome}: {e}')
